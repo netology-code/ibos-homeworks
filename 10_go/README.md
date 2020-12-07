@@ -71,7 +71,7 @@ func main() {
 1. Проведите исследование и ответьте на следующий вопросы:
    1. За что отвечает флаг `-c` в `sh` и `/C` в `cmd`? 
    1. Что будет, если попробовать исполнить те же команды напрямую в вашем приложении, без `sh -c` или `cmd /C`?
-    
+   
 <details>
 <summary>Подсказка по команде для вывода пользователей</summary>
 
@@ -132,6 +132,50 @@ func main() {
 	log.Print(string(output))
 }
 ```
+</details>
+
+<details>
+<summary>Подсказка по -c, /C</summary>
+
+Попробуйте сравнить вывод (версия для Linux):
+```go
+cmd := exec.Command("sh", "-c", "echo $PATH")
+```
+
+```go
+cmd := exec.Command("echo", "$PATH")
+```
+
+Попробуйте сравнить вывод (версия для Windows):
+```go
+cmd := exec.Command("cmd", "/C", "echo %PATH%")
+```
+
+```go
+cmd := exec.Command("echo", "%PATH%")
+```
+
+Вернитесь к лекции по Си и попробуйте сравнить с поведением вот этой программы:
+```c
+#include <stdlib.h>
+
+int main() {
+    system("echo $PATH"); // echo PATH в Windows
+    return 0;
+}
+```
+
+Возможно, вам поможет раздел `Overview` из документации на пакет `exec`:
+```
+Package exec runs external commands. It wraps os.StartProcess to make it easier to remap stdin and stdout, connect I/O with pipes, and do other adjustments.
+
+Unlike the "system" library call from C and other languages, the os/exec package intentionally does not invoke the system shell and does not expand any glob patterns or handle other expansions, pipelines, or redirections typically done by shells. The package behaves more like C's "exec" family of functions. To expand glob patterns, either call the shell directly, taking care to escape any dangerous input, or use the path/filepath package's Glob function. To expand environment variables, use package os's ExpandEnv.
+```
+
+Доп.ссылки для изучения:
+* [`system` в Windows](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/system-wsystem?view=msvc-160)
+* [`system` в man](https://man7.org/linux/man-pages/man3/system.3.html)
+
 </details>
 
 #### Написание сборочного скрипта
