@@ -146,15 +146,6 @@ cmd := exec.Command("sh", "-c", "echo $PATH")
 cmd := exec.Command("echo", "$PATH")
 ```
 
-Попробуйте сравнить вывод (версия для Windows):
-```go
-cmd := exec.Command("cmd", "/C", "echo %PATH%")
-```
-
-```go
-cmd := exec.Command("echo", "%PATH%")
-```
-
 Вернитесь к лекции по Си и попробуйте сравнить с поведением вот этой программы:
 ```c
 #include <stdlib.h>
