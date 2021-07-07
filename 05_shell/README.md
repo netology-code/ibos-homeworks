@@ -34,11 +34,11 @@
 
 **Например:**
 
-**user@user:~$ ./test_dir.sh**
-**admin_scripts**
-**...**
-**Videos**
-**Total: 22**
+user@user:~$ ./test_dir.sh
+admin_scripts**
+...
+Videos
+Total: 22
 
 
 
