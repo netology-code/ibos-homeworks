@@ -34,11 +34,11 @@
 
 **Например:**  
 
-**user@user:~$ ./test_dir.sh  <br/>
-admin_scripts**  <br/>
-**...**  <br/>
-**Videos  <br/>
-**Total: 22**  <br/>
+**user@user:~$ ./test_dir.sh  
+admin_scripts**  
+**...**  
+**Videos**
+**Total: 22**  
 
 
 ## Задание 3
@@ -47,13 +47,12 @@ admin_scripts**  <br/>
 
 **Например:**
 
-**user@user:~$ ./test.sh /etc**
-**/etc - dir**
-**user@user:~$ ./test.sh /etc/passwd**
-**/etc/passwd - file**
-**user@user:~$ ./test.sh /etc/passwd1**
-**/etc/passwd1 - not exist**
-
+**user@user:~$ ./test.sh /etc**  
+**/etc - dir**  
+**user@user:~$ ./test.sh /etc/passwd**  
+**/etc/passwd - file**  
+**user@user:~$ ./test.sh /etc/passwd1**  
+**/etc/passwd1 - not exist**  
 
 
 ## Задание 4* (необязательное)
