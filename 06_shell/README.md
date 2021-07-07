@@ -48,12 +48,12 @@
 
 **Например:**
 
-**./test.sh \windows**
-**c:\windows - dir**
-**./test.sh c:\pagefile.sys**
-**c:\pagefile.sys - file**
-**user@user:~$ c:\windows1**
-**c:\windows1 - not exist**
+**./test.sh \windows**  
+**c:\windows - dir**  
+**./test.sh c:\pagefile.sys**  
+**c:\pagefile.sys - file**  
+**user@user:~$ c:\windows1**  
+**c:\windows1 - not exist**  
 
 
 
