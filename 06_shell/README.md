@@ -34,11 +34,11 @@
 
 **Например:**
 
-**./test_dir.ps1**
-**admin_scripts**
-**...**
-**Videos**
-**Total: 22**
+**./test_dir.ps1**  
+**admin_scripts**  
+**...**  
+**Videos**  
+**Total: 22**  
 
 
 
