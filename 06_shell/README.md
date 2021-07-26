@@ -83,3 +83,12 @@ $ ./script.ps1 decrypt dGVzdAo=
 Decrypting...
 test
 ```
+
+Подсказки
+Для работы со строками можно использовать стандартную утилиту base64:
+
+<pre>[Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes(<строка>))</pre> - преобразование в формат base64
+
+<pre>[Text.Encoding]::Utf8.GetString([Convert]::FromBase64String(<строка>))</pre> - преобразование в текст
+
+
