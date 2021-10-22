@@ -48,7 +48,7 @@
 
 **Например:**
 
-**./test.ps1 \windows**  
+**./test.ps1 c:\windows**  
 **c:\windows - dir**  
 **./test.ps1 c:\pagefile.sys**  
 **c:\pagefile.sys - file**  
