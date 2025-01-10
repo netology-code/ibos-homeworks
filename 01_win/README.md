@@ -12,7 +12,7 @@
 
 ### Задача
 
-Скачайте установочный [ISO-файл от Microsoft](https://www.microsoft.com/ru-ru/software-download/windows10ISO).
+Скачайте установочный [ISO-файл от Microsoft](https://www.microsoft.com/ru-ru/evalcenter/download-windows-10-enterprise).
 
 <details>
 <summary>Для Windows</summary>
