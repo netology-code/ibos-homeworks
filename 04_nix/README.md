@@ -42,7 +42,7 @@ openssl passwd -6 -salt LXtFFs9lpTMP9OB8 password
 $6$LXtFFs9lpTMP9OB8$Pt8bV28JD2GWQ3vHUa9cLiAOv/KLUrLBPEuzIjOLtGKi2Q81HYQ3TXPa61KJzu0uEbUqtCVnCEXATcUvS77by1
 ```
 
-Теперь, когда вы знаете алгоритм, для вас не составит труда с помощью hashcat подобрать пароль по словарю для задания (в качестве аргумента hashcat передавайте строку `$6$LXtFFs9lpTMP9OB8$Pt8bV28JD2GWQ3vHUa9cLiAOv/KLUrLBPEuzIjOLtGKi2Q81HYQ3TXPa61KJzu0uEbUqtCVnCEXATcUvS77by1`)
+Теперь, когда вы знаете алгоритм, для вас не составит труда с помощью hashcat подобрать пароль по [словарю для задания](https://gitlab.com/kalilinux/packages/seclists/-/blob/kali/master/Passwords/Common-Credentials/10-million-password-list-top-100000.txt) (в качестве аргумента hashcat передавайте строку `$6$LXtFFs9lpTMP9OB8$Pt8bV28JD2GWQ3vHUa9cLiAOv/KLUrLBPEuzIjOLtGKi2Q81HYQ3TXPa61KJzu0uEbUqtCVnCEXATcUvS77by1`)
 
 Подсказка: ищите в hashcat тип хеша для которого в скобках написано `Unix`.
 </details>
