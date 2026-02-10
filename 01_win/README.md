@@ -13,8 +13,7 @@
 ### Задача
 
 Скачайте установочный [ISO-файл от Microsoft](https://www.microsoft.com/ru-ru/evalcenter/download-windows-10-enterprise).
-- Если по ссылке не получается скачать установочный файл, то можно скачать по этим ссылкам: [Windows 10](https://disk.360.yandex.ru/d/pyNJVSS3gUOHhg), [Windows 11](https://disk.360.yandex.ru/d/QNZD_kD6FHPWtA)
-
+- Если по ссылке не получается скачать установочный файл, то можно скачать по этим ссылкам: [Windows 10](https://disk.360.yandex.ru/d/pyNJVSS3gUOHhg), [Windows 11](https://disk.360.yandex.ru/d/QNZD_kD6FHPWtA). 
 Это официальные демонстрационные версии от Microsoft. Образы скачиваются без ключа и работают в демонстрационном режиме в течение 90 дней
 
 <details>
